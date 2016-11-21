@@ -1,3 +1,5 @@
+
+
 .. image:: https://github.com/meyt/apihero/raw/master/apihero-logo-128.png
 
 =======
@@ -27,7 +29,7 @@ TODO
 - Be template design easier
 - External pages
 - Search
-- Response syntax highlit
+- Response syntax highlight.
 - Single-page build
 - Add remember option for parameters, to keep last value.
 - Pre-loader for test unit.
