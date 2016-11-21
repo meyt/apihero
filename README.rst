@@ -1,4 +1,4 @@
-.. image:: http://github.com/TOOODOO.png
+.. image:: https://github.com/meyt/apihero/raw/master/apihero-logo-128.png
 
 =======
 APIHERO
