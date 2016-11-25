@@ -67,7 +67,14 @@ pre{
     display: inline-block;
     color: #999;
 }
-
+.panel-sidebar .active .method{
+    color: #fff;
+}
+table .label{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+table td
 #footer{
     font-size: 11px;
     color: #D7D7D7;

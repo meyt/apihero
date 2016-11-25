@@ -67,6 +67,10 @@
 
                 $(this).attr('action', cur_action);
                 var postData = new FormData(this);
+                if (method=="get" || method=="GET"){
+//                    actionstr =  actionstr + '?' + $(this).serialize();
+                    postData = $(this).serialize();
+                }
                 var actionstr = $(this).attr("action");
                 var rr = $.ajax({
                     url : actionstr,

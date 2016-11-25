@@ -8,8 +8,9 @@
 </%block>
 
 <div class="col-lg-offset-1 col-lg-10">
-    <h3>Version ${version}</h3>
-    <h4>Resources: </h4>
+    <h1>Version ${version}</h1>
+    ${description}
+    <h2>Resources: </h2>
     <ul>
     % for doc in docs:
         <li><a href="${doc['name']}.html">${doc['resource']}</a></li>
