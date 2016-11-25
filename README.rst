@@ -22,9 +22,11 @@ install from pip:
     sudo pip install apihero
 
 just work on python3, and if doesn't work on distros like ubuntu
+:
 
     sudo apt install python3-pip
     sudo pip install apihero
+
 
 Now checkout `APIHero sample <https://github.com/meyt/apihero-demo/>`_ and learn how to create your own documentation.
 for build output `cd` on your documentation directory and simply run `apihero`.
