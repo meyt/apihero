@@ -7,7 +7,7 @@ requirements = [
 ]
 setup(
     name='apihero',
-    version='0.1.1',
+    version='0.1.3',
     description='RESTful JSON API documentation generator tool with live unit test.',
     long_description=readme,
     install_requires=requirements,
