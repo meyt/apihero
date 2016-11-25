@@ -23,7 +23,7 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Operating System :: Unix',
         'Programming Language :: Python :: 3 :: Only',
-        'Topic :: Software Development :: Documentation'
+        'Topic :: Software Development :: Documentation',
         'Topic :: Documentation',
         'Topic :: Software Development :: Build Tools'
     ],
