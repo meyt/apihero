@@ -22,7 +22,7 @@ install from pip:
     sudo pip install apihero
 
 just work on python3, and if doesn't work on distros like ubuntu
-:
+::
 
     sudo apt install python3-pip
     sudo pip install apihero
