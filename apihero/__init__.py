@@ -6,6 +6,7 @@ from mako.lookup import TemplateLookup
 import json
 import shutil
 
+
 class apihero:
     config_path = None
     template_path = None
@@ -30,8 +31,6 @@ class apihero:
                                                   output_encoding='utf-8',
                                                   encoding_errors='replace')
         self.markdown = mistune.Markdown()
-
-
 
     def set_template_path(self, path):
         if self.config is not None:
@@ -59,7 +58,6 @@ class apihero:
         reserved_ends = ['.md']
         for reserved, restype in self.doc_response_reserved.items():
             reserved_ends.append(reserved)
-
         self.versions = os.listdir(self.docs_path)
         temp_docs = {}
         for version in self.versions:
@@ -72,7 +70,6 @@ class apihero:
                         temp_docs[version].remove(doc)
 
         self.docs_list = temp_docs
-
 
     def _read_docs_list_detail(self):
         self.docs_list_detail = {}
@@ -91,12 +88,8 @@ class apihero:
                         "method": doc_content["method"]
                     })
 
-
-
     def set_build_path(self, path):
         self.build_path = path
-
-
 
     def build_index(self):
         index_description_path = os.path.join(self.config_path, "description.md")
@@ -115,7 +108,6 @@ class apihero:
         template = self.template_lookup.get_template("index.html")
         template_output = template.render(config=self.config, versions=self.versions, description= description)
         self.put_file_content(build_index_path, template_output)
-
 
     def get_file_content(self, path):
         res = ""
@@ -144,7 +136,6 @@ class apihero:
                                               description=description)
             self.put_file_content(build_version_index_path, template_output)
 
-
     def get_doc_all_res(self, version, doc_name):
         filename, file_extension = os.path.splitext(doc_name)
         out = {}
@@ -162,7 +153,6 @@ class apihero:
         if os.path.exists(doc_description_path):
             out = self.markdown(self.get_file_content(doc_description_path))
         return out
-
 
     def build_docs(self):
         # template_docs_single_path = os.path.join(self.template_path, "docs_single.html")
@@ -203,7 +193,7 @@ class apihero:
             shutil.copytree(template_assets_path, build_assets_path)
 
     def build_prepare(self):
-        if(os.path.isdir(self.build_path)):
+        if os.path.isdir(self.build_path):
             shutil.rmtree(self.build_path)
 
         os.makedirs(self.build_path, exist_ok=True)

@@ -47,3 +47,6 @@ TODO
 - Complete APIHero documentation.
 - Add configurable CLI argument's.
 - Add one level category.
+- Automatic build through file wather.
+- Add simple raw response body.
+- Resend request on result popup.
