@@ -85,3 +85,6 @@ table td
     text-decoration: underline;
 }
 
+.breadcrumb > li + li:before{
+    content: " ";
+}
