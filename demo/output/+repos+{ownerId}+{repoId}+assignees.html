@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GitHub API">
+    <meta name="author" content="Mahdi Ghg">
+    <title>GitHub API</title>
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="GitHub API" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="GitHub API" />
+	<link href="static/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="static/css/style.css" rel="stylesheet" >
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="static/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="static/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<div class="container">
+
+        <nav class="navbar navbar-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex5-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    GitHub API
+                </a>
+            </div>
+            <ul class="nav navbar-nav">
+                    <ul class="breadcrumb">
+                    
+                        
+                        <li><a href="+repos+{ownerId}+{repoId}.html">/repos/{ownerId}/{repoId}</a></li>
+                        
+                        <li><a href="+repos+{ownerId}+{repoId}+assignees.html">/assignees</a></li>
+                    </ul>
+            </ul>
+        </nav>
+
+        <!-- top toolbar  -->
+
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group">
+                        
+                        <li class="list-group-item">
+                            <a href="+search.html">
+                                /search
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+events.html">
+                                /events
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+feeds.html">
+                                /feeds
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+meta.html">
+                                /meta
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+rate_limit.html">
+                                /rate_limit
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+issues.html">
+                                /issues
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+notifications.html">
+                                /notifications
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+gists.html">
+                                /gists
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+orgs+{orgId}.html">
+                                /orgs/{orgId}
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+teams+{teamsId}.html">
+                                /teams/{teamsId}
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+repositories.html">
+                                /repositories
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+repos+{ownerId}+{repoId}.html">
+                                /repos/{ownerId}/{repoId}
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+user.html">
+                                /user
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+users.html">
+                                /users
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+gitignore+templates.html">
+                                /gitignore/templates
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+markdown.html">
+                                /markdown
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+networks+{ownerId}+{repoId}+events.html">
+                                /networks/{ownerId}/{repoId}/events
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+legacy.html">
+                                /legacy
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item">
+                            <a href="+emojis.html">
+                                /emojis
+                            </a>
+                        </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                
+
+<div class="resource-description">
+
+
+
+
+
+
+
+    <h2>Methods: </h2>
+    <ul class="nav nav-tabs">
+        <li><a data-toggle="tab" href="#method-content-get">get</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="method-content-get" class="tab-pane fade">
+            <h3><built-in method title of str object at 0x7f2cc4f5f490></h3>
+            <p>List assignees.
+This call lists all the available assignees (owner + collaborators) to which
+issues may be assigned.
+</p>
+
+
+        </div>
+    </div>
+
+
+    <h2>Resources: </h2>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="+repos+{ownerId}+{repoId}+assignees+{assignee}.html">
+                /{assignee}
+            </a>
+            <span class="badge bg-primary">
+                get
+            </span>
+        </li>
+    </ul>
+</div>
+            </div>
+            <div class="col-xs-12" id="footer">
+                Generated by <a href="https://github.com/meyt/apihero">APIHero</a>
+            </div>
+        </div>
+
+	</div>
+    <script src="static/js/jquery.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
