@@ -1,16 +1,10 @@
 from setuptools import setup
 
-readme = open('README.rst').read()
-requirements = [
-    'mako',
-    'mistune',
-]
 setup(
     name='apihero',
     version='0.1.3',
-    description='RESTful JSON API documentation generator tool with live unit test.',
-    long_description=readme,
-    install_requires=requirements,
+    description='Restful API documentation generator tool with live unit test.',
+    long_description=open('README.rst').read(),
     url='http://github.com/meyt/apihero',
     author='Mahdi Ghane.g',
     license='GPLv3',
@@ -29,5 +23,10 @@ setup(
     ],
     packages=['apihero'],
     scripts=['bin/apihero'],
+    install_requires=[
+        'mako',
+        'mistune',
+    ],
     include_package_data=True,
-    zip_safe=False)
+    zip_safe=False
+)
