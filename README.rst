@@ -1,6 +1,6 @@
 
 
-.. image:: https://github.com/meyt/apihero/raw/master/apihero-logo-128.png
+.. image:: https://github.com/meyt/apihero/raw/master/stuff/apihero-logo-128.png
 
 =======
 APIHero
